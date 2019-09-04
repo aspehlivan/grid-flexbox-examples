@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="title">Responsive Tables - Contained Scrolling</title>
+        <style type="text/css">
+
+        body {
+            margin: 1em;
+        }
+        
+        td {
+        min-width: 75px;
+        text-align: center;
+        }
+        th:first-of-type {
+        min-width: 125px;
+        }
+        div.contained_table {
+        width: 100%;
+        overflow-x: auto;
+        }
+
+        
+  
+        </style>
+    </head>
+    <body>
+        <div class="contained_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th class="inning">1st</th>
+                    <th class="inning">2nd</th>
+                    <th class="inning">3rd</th>
+                    <th class="inning">4th</th>
+                    <th class="inning">5th</th>
+                    <th class="inning">6th</th>
+                    <th class="inning">7th</th>
+                    <th class="inning">8th</th>
+                    <th class="inning">9th</th>
+                    <th class="final">Final</th>
+                </tr>
+            </thead>
+            <tbody>
+     <tr>
+         <td>
+             <span class="shortName">TOR</span>
+             <span class="longName">Toronto Blue Jays</span>
+         </td>
+         <td class="inning">0</td>
+         <td class="inning">0</td>
+         <td class="inning">0</td>
+         <td class="inning">4</td>
+         <td class="inning">0</td>
+         <td class="inning">1</td>
+         <td class="inning">0</td>
+         <td class="inning">0</td>
+         <td class="inning">0</td>
+         <td class="final">5</td>
+     </tr>
+     <tr>
+         <td>
+            <span class="shortName">SF</span>
+            <span class="longName">San Francisco Giants</span>
+        </td>
+        <td class="inning">0</td>
+        <td class="inning">0</td>
+        <td class="inning">0</td>
+        <td class="inning">4</td>
+        <td class="inning">0</td>
+        <td class="inning">0</td>
+        <td class="inning">0</td>
+        <td class="inning">0</td>
+        <td class="inning">0</td>
+        <td class="final">4</td>
+     </tr>
+     </tbody>
+    </table>
+</div>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="title">Flexbox deconstructing</title>
+        <style>
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container1 {
+            border: 1px solid red;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            border: 1px dashed blue;
+            height: 50px;
+            box-sizing: border-box;
+            max-width: 50%;
+        }
+
+        .box {
+            height: 100px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+
+        .dark_blue {background-color: darkblue;}
+        .light_blue {background-color: lightblue;}
+        .green {background-color: green;}
+        .orange {background-color: orange;}
+        .red {background-color: red;}
+        header {background-color: lime;}
+        footer {background-color: whitesmoke;}
+
+        @media screen and (max-width:500px) {
+
+            header {width:100%; order: 1;}
+            .red {width: 50%; order: 2;}
+            .orange {width: 50%; order: 3;}
+            footer {width: 100%; order: 4;}
+            .light_blue {width: 20%; order: 5;}
+            .dark_blue {width: 60%; order: 6;}
+            .green {width: 20%; order: 7;}
+        }
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                    <header class="box"></header>
+                    <div class="box dark_blue"></div>
+                    <div class="box light_blue"></div>
+                    <div class="box green"></div>
+                    <div class="box orange"></div>
+                    <div class="box red"></div>
+                    <footer class="box"></footer>
+            </div>
+
+            <div class="container1">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                    <div class="item">7</div>
+                    <div class="item">8</div>
+                  </div>
+
+                  <div class="Aligner">
+                        <div class="Aligner-item Aligner-item--top">senasfsfsfsfjsbfolsad</div>
+                        <div class="Aligner-item">…sdfjsdfmsdfsdf</div>
+                        <div class="Aligner-item Aligner-item--bottom">asfsdgsdgsdfsd…</div>
+                      </div>
+    </body>
+</html>

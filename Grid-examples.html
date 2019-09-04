@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="title">Grid Example</title>
+        <style type="text/css">  * {box-sizing: border-box;}
+
+
+        .wrapper {
+           display: grid;
+           border: 2px solid #f76707;
+           border-radius: 5px;
+           background-color: #fff4e6;
+           grid-template-columns: repeat(3, 1fr);
+        }
+
+        .wrapper1 {
+           display: grid;
+           border: 2px solid #f76707;
+           border-radius: 5px;
+           background-color: #fff4e6;
+           grid-template-columns: repeat(3, 1fr);
+           grid-auto-rows: minmax(100px, auto);
+           grid-column-gap: 10px;
+           grid-row-gap: 1em;
+        }
+
+        .wrapper > div {
+           border: 2px solid #ffa94d;
+           border-radius: 5px;
+           background-color: #ffd8a8;
+           padding: 1em;
+           color: #d9480f;
+        }
+
+        .wrapper1 > div {
+           border: 2px solid #ffa94d;
+           border-radius: 5px;
+           background-color: #ffd8a8;
+           padding: 1em;
+           color: #d9480f;
+        }
+
+        
+        .wrapper1 { 
+           display: grid; 
+           grid-template-columns: repeat(3, 1fr); 
+           grid-auto-rows: 100px; 
+        } 
+
+        .wrapper2 {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           grid-auto-rows: 100px;
+        }
+
+        .box1 { 
+           grid-column-start: 1; 
+           grid-column-end: 4; 
+           grid-row-start: 1; 
+           grid-row-end: 3; 
+        }
+
+        .box2 { 
+           grid-column-start: 1; 
+           grid-row-start: 3; 
+           grid-row-end: 5; 
+        }
+
+        .box {
+           border: 2px solid #ffa94d;
+           border-radius: 5px;
+           background-color: #ffd8a8;
+           padding: 1em;
+           color: #d9480f;
+        }
+
+        .nested {
+           border: 2px solid #ffec99;
+           border-radius: 5px;
+           background-color: #fff9db;
+           padding: 1em;
+        }
+
+        .box_1 {
+           grid-column: 1 / 4;
+           grid-column-start: 1;
+           grid-column-end: 4;
+           grid-row-start: 1;
+           grid-row-end: 3;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box1_2 {
+           grid-column-start: 1;
+           grid-column-end: 4;
+           grid-row-start: 1;
+           grid-row-end: 3;
+        }
+
+        .box2_2 {
+           grid-column-start: 1;
+           grid-row-start: 2;
+           grid-row-end: 4;
+        }
+
+
+        .wrapper2 {
+           border: 2px solid #f76707;
+           border-radius: 5px;
+           background-color: #fff4e6;
+        }
+
+        .box_2 {
+           border: 2px solid #ffa94d;
+           border-radius: 5px;
+           background-color: #ffd8a8;
+           padding: 1em;
+           color: #d9480f;
+        }
+
+  
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+          </div>
+
+          <div class="wrapper">
+            <div>One</div>
+            <div>Two
+              <p>I have some more content in.</p>
+              <p>This makes me taller than 100 pixels.</p>
+            </div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+          </div>
+
+          <div class="wrapper1">
+            <div class="box1">One</div>
+            <div class="box2">Two</div>
+            <div class="box3">Three</div>
+            <div class="box4">Four</div>
+            <div class="box5">Five</div>
+          </div>
+
+          <div class="wrapper">
+            <div class="box box_1">
+              <div class="nested">a</div>
+              <div class="nested">b</div>
+              <div class="nested">c</div>
+            </div>
+            <div class="box box2">Two</div>
+            <div class="box box3">Three</div>
+            <div class="box box4">Four</div>
+            <div class="box box5">Five</div>
+          </div>
+
+          <div class="wrapper2">
+            <div class="box_2 box1_2">One</div>
+            <div class="box_2 box2_2">Two</div>
+            <div class="box_2 box3_2">Three</div>
+            <div class="box_2 box4_2">Four</div>
+            <div class="box_2 box5_2">Five</div>
+          </div>
+    </body>
+</html>

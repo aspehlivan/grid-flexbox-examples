@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="title">Textual Pseudo-elements</title>
+        <style>
+body {
+  width: 40%;
+  color: #666;
+  font: 14px/24px "Open Sans", Sans-Serif;
+}
+.alpha:first-letter,
+.bravo:first-line { /*as you can guess, change the first letter and the first lane */
+  color: #ff7b29;
+  font-size: 18px;
+}
+p {
+  margin-bottom: 24px;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+</style>
+        <body>
+<p class="alpha">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Nulla vestibulum dignissim leo a interdum. Duis eu orci velit.</p>
+
+<p class="bravo">Integer eget enim pulvinar leo consectetur tincidunt ut sed erat.
+     Etiam elit velit, molestie eu rutrum vel, vehicula feugiat augue. 
+     Vestibulum elementum dictum turpis ac blandit.</p>
+    </body>
+    </html>
