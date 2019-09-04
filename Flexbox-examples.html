@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="title">Flexbox examples</title>
+        <style type="text/css">
+
+        .dark_blue {background-color: darkblue;}
+        .light_blue {background-color: lightblue;}
+        .green {background-color: green;}
+        .orange {background-color: orange;}
+        .red {background-color: red;}
+
+
+        .container {
+            width: 100%;
+        }
+
+        .container1 {
+            width: 100%;
+            display: flex;
+        }
+
+        .container2 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+ 
+        .box {width: 600px;
+              height: 100px;
+        }
+
+        .box1 {width: 400px;
+              height: 100px;
+        }
+
+        .box2 {width: 200px;
+              height: 100px;
+        }
+        
+  @media screen and (min-width:700px) {
+      .dark_blue {order: 4;}
+      .light_blue {order: 5;}
+      .green {order: 2;}
+      .orange {order: 3;}
+      .red {order: 1;}
+  }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box dark_blue"></div>
+            <div class="box light_blue"></div>
+            <div class="box green"></div>
+        </div>
+<br>
+        <div class="container1">
+            <div class="box dark_blue"></div>
+            <div class="box light_blue"></div>
+            <div class="box green"></div>
+        </div>
+<br>
+        <div class="container2">
+                <div class="box1 dark_blue"></div>
+                <div class="box1 light_blue"></div>
+                <div class="box1 green"></div>
+        </div>
+<br>
+--Flex Item: order--
+<br>
+        <div class="container1">
+                <div class="box2 dark_blue"></div>
+                <div class="box2 light_blue"></div>
+                <div class="box2 green"></div>
+                <div class="box2 orange"></div>
+                <div class="box2 red"></div>
+        </div>
+     
+    </body>
+</html>
